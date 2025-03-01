@@ -28,7 +28,7 @@ contract Shipping {
     }
 
     // Function to get the status of the shipping
-    function getStatus(ShippingStatus _status) internal pure returns (string memory sta) {
+    function getStatus(ShippingStatus _status) internal pure returns (string memory sta ) {
         // Check the current status and return the correct name
         if (ShippingStatus.Pending == _status) return "Pending";
         if (ShippingStatus.Shipped == _status) return "Shipped";
